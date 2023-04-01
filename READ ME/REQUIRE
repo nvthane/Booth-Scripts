@@ -49,3 +49,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts
   3. Change Booth Text to Recent Chat Message
   
 loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/ChangeBoothToRecentChatMsg.txt"))()
+
+
+
+
+
+
+
+
+
+
+  4. BOOTH BYPASS 
+  
+  
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/BoothBypass.txt"))()
