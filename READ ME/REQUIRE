@@ -1,0 +1,51 @@
+HERE ARE ALL THE SCRIPTS YOULL NEED TO USE TO RUN THIS:
+
+
+
+
+
+
+
+
+
+  1: The Fog Is Coming
+  
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/THE%20FOG%20IS%20COMING.txt"))()
+  
+  
+  
+  
+  
+  
+  
+  2. Change booth to most recent message: 
+  
+  local message = "CHANGE ME TO WHATEVER YOU WANT"
+
+--[[
+ _____     _           ____    ______  ____    ____       
+/\___ \  /' \  /'\_/`\/\  _`\ /\__  _\/\  _`\ /\  _`\     
+\/__/\ \/\_, \/\      \ \,\L\_\/_/\ \/\ \ \L\_\ \ \L\ \   
+   _\ \ \/_/\ \ \ \__\ \/_\__ \  \ \ \ \ \  _\L\ \ ,  /   
+  /\ \_\ \ \ \ \ \ \_/\ \/\ \L\ \ \ \ \ \ \ \L\ \ \ \\ \  
+  \ \____/  \ \_\ \_\\ \_\ `\____\ \ \_\ \ \____/\ \_\ \_\
+   \/___/    \/_/\/_/ \/_/\/_____/  \/_/  \/___/  \/_/\/ /
+                                                          
+]]
+
+
+local i = Instance.new("StringValue", game.ReplicatedStorage)
+i.Value = message
+i.Name = "48482375020"
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/Message2REQUIRE.txt"))()
+
+
+
+  
+  
+  
+  3. Change Booth Text to Recent Chat Message
+  
+loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/ChangeBoothToRecentChatMsg.txt"))()
