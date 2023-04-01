@@ -1,0 +1,38 @@
+local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
+local function updateS(t)
+	local updater = game:GetService("ReplicatedStorage").CustomiseBooth
+    local args = {
+        [1] = "Update",
+        [2] = {
+            ["DescriptionText"] = t,
+            ["ImageId"] = 0
+        }
+    }
+    
+    updater:FireServer(unpack(args))
+end
+
+Instance.new("ScreenGui", game.ReplicatedStorage)
+while true do 
+    game.ReplicatedStorage.ScreenGui.Enabled = true
+    local timex = 0.2
+    for i = 0, #message do
+    	updateS(string.sub(message, 1, i))
+    	wait(timex)
+    end
+    
+    wait(timex*string.len(message)*0.1)
+    
+    updateS("_")
+    wait(0.5)
+    updateS(message)
+    wait(0.5)
+    updateS("_")
+    wait(0.5)
+    updateS(message)
+    wait(0.5)
+    updateS("_")
+    wait(0.5)
+    updateS(message)
+    wait(0.5)
+end
