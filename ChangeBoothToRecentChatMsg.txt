@@ -1,0 +1,19 @@
+local x = Instance.new("TextButton", game.ReplicatedStorage)
+local function changeSign(t)
+	local updater = game:GetService("ReplicatedStorage").CustomiseBooth
+	local args = {
+		[1] = "Update",
+		[2] = {
+			["DescriptionText"] = t,
+			["ImageId"] = 0
+		}
+	}
+
+	updater:FireServer(unpack(args))
+end
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(newMessage)
+	game.ReplicatedStorage.TextButton.Name = "TextButton"
+    changeSign(newMessage.SpeakerDisplayName .. ": " .. newMessage.Message .. " - Script by J1MSTER")
+	
+end)
