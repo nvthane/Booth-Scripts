@@ -14,6 +14,6 @@ end
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(newMessage)
 	game.ReplicatedStorage.TextButton.Name = "TextButton"
-    changeSign(newMessage.SpeakerDisplayName .. ": " .. newMessage.Message .. " - Script by J1MSTER")
+    changeSign(newMessage.SpeakerDisplayName .. ": " .. newMessage.Message .. " Recent Chat")
 	
 end)
