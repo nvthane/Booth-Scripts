@@ -13,9 +13,6 @@ local function chat(t)
 	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(t, "All")
 end
 
-
-chat("J1mster's Booth Bypass Script 1.5.0 running")
-
 game.RunService.Heartbeat:Connect(function(plr)
 	wait(0.5)
 	for _, v in pairs(game.Workspace:GetChildren()) do 
@@ -31,7 +28,7 @@ game.RunService.Heartbeat:Connect(function(plr)
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
 			end
 				
-			chat("Removed blacklist from ".. plrB .. "'s booth. Script by J1msterrr")
+			chat("Removed my blacklist from ".. plrB .. "'s booth. 😂💀🔥🔥")
 			v:Destroy()
 		end
 	end		
